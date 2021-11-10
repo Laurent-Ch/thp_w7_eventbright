@@ -9,6 +9,10 @@ Réalisé par la team Bréguette_qui-n'y-est-plus-vraiment **Mathias** **Laurent
 
 ## Rendez-vous ici
 
-https://eventbright-paris-thp.herokuapp.com/
+V1 (dropdown out) https://eventbright-paris-thp.herokuapp.com/
+
+V2 (Sendgrid nous embête) https://thp-eventbright-v2.herokuapp.com/
+
+On testera en local !
 
 *et c'est parti !*

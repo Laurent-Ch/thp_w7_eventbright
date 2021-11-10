@@ -7,4 +7,7 @@ Rails.application.routes.draw do
   resources :home
   resources :user
   resources :event
+  resources :event do
+    resources :attendance
+  end
 end

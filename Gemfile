@@ -65,12 +65,10 @@ gem 'faker'
 
 gem 'table_print'
 
-gem 'rubocop'
-
-gem 'rubocop-rails'
-
 gem 'better_errors'
 
 gem 'dotenv-rails'
 
 gem 'devise'
+
+gem 'stripe'

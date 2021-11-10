@@ -14,4 +14,5 @@ class Attendance < ApplicationRecord
   def warning_host
     AttendanceMailer.warning_email(self).deliver_now
   end
+
 end
