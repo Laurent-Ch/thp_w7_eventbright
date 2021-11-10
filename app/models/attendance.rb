@@ -1,7 +1,8 @@
 # frozen_string_literal: true
 
 class Attendance < ApplicationRecord
-  after_create :warning_host
+  #for Heroku
+  #after_create :warning_host
 
   belongs_to :guest, class_name: 'User'
   belongs_to :event
