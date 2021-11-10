@@ -1,18 +1,16 @@
-# README
+README
+welcome to Evenbright
+Events that make the world brighter No bullshit
 
-## welcome to Evenbright
+Fonctionnalité
+- stripe ok
+- conditions pour les participation ok 
 
-_Events that make the world brighter_
-_No bullshit_
+Réalisé par la team Bréguette_qui-n'y-est-plus-vraiment Mathias Laurent Violette
 
-Réalisé par la team Bréguette_qui-n'y-est-plus-vraiment **Mathias** **Laurent** **Violette**
+Rendez-vous ici
+All good ici https://eventbright-paris-thp.herokuapp.com/
 
-## Rendez-vous ici
+On testera aussi en local !
 
-V1 (dropdown out) https://eventbright-paris-thp.herokuapp.com/
-
-V2 (Sendgrid nous embête) https://thp-eventbright-v2.herokuapp.com/
-
-On testera en local !
-
-*et c'est parti !*
+et c'est parti !
