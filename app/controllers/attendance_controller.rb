@@ -3,6 +3,11 @@ class AttendanceController < ApplicationController
   before_action :is_host?, only: [:new]
   before_action :is_already_a_guest?, only: [:new]
 
+  def index
+    @attendances = Attendance.where(event_id: params[:event_id])
+    @event = Event.find(params[:event_id])
+  end
+
   def new
     @user = current_user
     @event = Event.find(params[:event_id])
