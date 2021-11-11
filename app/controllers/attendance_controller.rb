@@ -1,5 +1,6 @@
 class AttendanceController < ApplicationController
-
+  
+  before_action :authenticate_user!, only: [:new]
   before_action :is_host?, only: [:new]
   before_action :is_already_a_guest?, only: [:new]
   before_action :is_admin?, only: [:index]
