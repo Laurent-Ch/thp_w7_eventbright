@@ -3,7 +3,16 @@
   <div class="row d-flex justify-content-center align-items-center">
     <div class="card" style="width: 18rem;">
       <div class="card-body text-center">
-        <h3 class="card-title">Ton profil</h3>
+      <%if @user.avatar.attached?%>
+      <div class="avatar"><%= image_tag @user.avatar, size: "200x200"%></div>
+      <div class="card-text mt-3">
+      <%= form_tag user_avatars_path(@user), multipart: true do %>
+        <%= file_field_tag :avatar%>
+        <%= submit_tag "mettre à jour" , class: 'btn btn-danger form-control mt-1'%>
+      <% end %>
+      </div>
+      <%end%>
+      <h3 class="card-title">Ton profil</h3>
         <p class="card-text"><%= @user.description %></p>
       </div>
       <ul class="list-group list-group-flush text-center">

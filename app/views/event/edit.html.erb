@@ -6,7 +6,7 @@
 <div class="col-md-9 mb-md-0 mb-5">
 <br>
 <h2 class="h3-responsive font-weight-bold text-center my-4">Edite ton événement <%=@event.title%></h2>
-            <%= form_tag url_for(action: 'update'), method: 'patch', class: 'contact-form', id: 'contact-form' do %>
+            <%= form_tag url_for(action: 'update'), multipart: true, method: 'patch', class: 'contact-form', id: 'contact-form' do %>
 
                 <!--Grid row-->
                 <div class="row">
@@ -15,7 +15,7 @@
                     <div class="col-md-12">
                         <div class="md-form mb-0 form-group">
                           <%= label_tag :event_start_date, "Date de l'événement" %>
-                          <%= text_field_tag :event_start_date , nil, class: 'form-control', type:"date", value:@event.start_date%>
+                          <%= text_field_tag :event_start_date , nil, class: 'form-control', type:"date", value: @event.start_date%>
                         </div>
                     </div>
                 </div>
@@ -67,7 +67,22 @@
                         </div>
                     </div>
                 </div>
-                <br>
+
+                <!--Grid row-->
+                  <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0 form-group">
+                        <%if @event.event_pic.attached?%>
+                        <%= label_tag :event_pic, "Image actuelle, à modifier ou ré-uploader" %>
+                        <div class="avatar text-center my-2"><%= image_tag @event.event_pic, size: "200x200"%></div>
+                        <% else %>
+                        <%= label_tag :event_pic, "Tu n'as pas encore d'image" %>
+                        <% end %>
+                          <%= file_field_tag :event_pic, class: 'form-control'%>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="text-center text-md-left">
                   <%= submit_tag "C'est parti !", class: 'btn btn-danger form-control' %>
                 </div>

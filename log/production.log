@@ -1,0 +1,168 @@
+I, [2021-11-11T15:34:08.746570 #10374]  INFO -- : [65d14173-8c05-4a07-a1be-efc80fa6ba74] Started GET "/" for 127.0.0.1 at 2021-11-11 15:34:08 +0100
+I, [2021-11-11T15:34:08.750289 #10374]  INFO -- : [65d14173-8c05-4a07-a1be-efc80fa6ba74] Processing by EventController#index as HTML
+I, [2021-11-11T15:34:08.771472 #10374]  INFO -- : [65d14173-8c05-4a07-a1be-efc80fa6ba74]   Rendering event/index.html.erb within layouts/application
+I, [2021-11-11T15:34:08.787121 #10374]  INFO -- : [65d14173-8c05-4a07-a1be-efc80fa6ba74]   Rendered event/index.html.erb within layouts/application (15.5ms)
+I, [2021-11-11T15:34:08.787350 #10374]  INFO -- : [65d14173-8c05-4a07-a1be-efc80fa6ba74] Completed 500 Internal Server Error in 20ms
+F, [2021-11-11T15:34:08.788224 #10374] FATAL -- : [65d14173-8c05-4a07-a1be-efc80fa6ba74]   
+F, [2021-11-11T15:34:08.788257 #10374] FATAL -- : [65d14173-8c05-4a07-a1be-efc80fa6ba74] ActionView::Template::Error (connection to server on socket "/tmp/.s.PGSQL.5432" failed: FATAL:  database "EventBright_production" does not exist
+):
+F, [2021-11-11T15:34:08.788359 #10374] FATAL -- : [65d14173-8c05-4a07-a1be-efc80fa6ba74]     14: 
+[65d14173-8c05-4a07-a1be-efc80fa6ba74]     15: 
+[65d14173-8c05-4a07-a1be-efc80fa6ba74]     16: <div class="d-flex flex-wrap justify-content-center">
+[65d14173-8c05-4a07-a1be-efc80fa6ba74]     17: <%Event.all.each do |event|%>
+[65d14173-8c05-4a07-a1be-efc80fa6ba74]     18:   <div class="card border-info my-2 mx-3 border-radius rounded" style="width: 18rem;">
+[65d14173-8c05-4a07-a1be-efc80fa6ba74]     19:     <div class="card-body">
+[65d14173-8c05-4a07-a1be-efc80fa6ba74]     20:       <h5 class="card-title">Event numéro <%= Event.all.index(event) + 1 %></h5>
+F, [2021-11-11T15:34:08.788389 #10374] FATAL -- : [65d14173-8c05-4a07-a1be-efc80fa6ba74]   
+F, [2021-11-11T15:34:08.788420 #10374] FATAL -- : [65d14173-8c05-4a07-a1be-efc80fa6ba74] app/views/event/index.html.erb:17:in `_app_views_event_index_html_erb__1531409082054133348_19520'
+I, [2021-11-11T15:34:37.960271 #10374]  INFO -- : [f3fd2780-79a8-42f5-a58a-1f55ac6ac17c] Started GET "/" for 127.0.0.1 at 2021-11-11 15:34:37 +0100
+I, [2021-11-11T15:34:37.975537 #10374]  INFO -- : [f3fd2780-79a8-42f5-a58a-1f55ac6ac17c] Processing by EventController#index as HTML
+I, [2021-11-11T15:34:37.976006 #10374]  INFO -- : [f3fd2780-79a8-42f5-a58a-1f55ac6ac17c]   Rendering event/index.html.erb within layouts/application
+I, [2021-11-11T15:34:37.979344 #10374]  INFO -- : [f3fd2780-79a8-42f5-a58a-1f55ac6ac17c]   Rendered event/index.html.erb within layouts/application (3.3ms)
+I, [2021-11-11T15:34:37.979509 #10374]  INFO -- : [f3fd2780-79a8-42f5-a58a-1f55ac6ac17c] Completed 500 Internal Server Error in 4ms
+F, [2021-11-11T15:34:37.980357 #10374] FATAL -- : [f3fd2780-79a8-42f5-a58a-1f55ac6ac17c]   
+F, [2021-11-11T15:34:37.980392 #10374] FATAL -- : [f3fd2780-79a8-42f5-a58a-1f55ac6ac17c] ActionView::Template::Error (connection to server on socket "/tmp/.s.PGSQL.5432" failed: FATAL:  database "EventBright_production" does not exist
+):
+F, [2021-11-11T15:34:37.980488 #10374] FATAL -- : [f3fd2780-79a8-42f5-a58a-1f55ac6ac17c]     14: 
+[f3fd2780-79a8-42f5-a58a-1f55ac6ac17c]     15: 
+[f3fd2780-79a8-42f5-a58a-1f55ac6ac17c]     16: <div class="d-flex flex-wrap justify-content-center">
+[f3fd2780-79a8-42f5-a58a-1f55ac6ac17c]     17: <%Event.all.each do |event|%>
+[f3fd2780-79a8-42f5-a58a-1f55ac6ac17c]     18:   <div class="card border-info my-2 mx-3 border-radius rounded" style="width: 18rem;">
+[f3fd2780-79a8-42f5-a58a-1f55ac6ac17c]     19:     <div class="card-body">
+[f3fd2780-79a8-42f5-a58a-1f55ac6ac17c]     20:       <h5 class="card-title">Event numéro <%= Event.all.index(event) + 1 %></h5>
+F, [2021-11-11T15:34:37.980515 #10374] FATAL -- : [f3fd2780-79a8-42f5-a58a-1f55ac6ac17c]   
+F, [2021-11-11T15:34:37.980544 #10374] FATAL -- : [f3fd2780-79a8-42f5-a58a-1f55ac6ac17c] app/views/event/index.html.erb:17:in `_app_views_event_index_html_erb__1531409082054133348_19520'
+I, [2021-11-11T15:35:48.825758 #10374]  INFO -- : [cd5e93b2-2d05-485e-a5c6-fe8e1a26c790] Started GET "/" for 127.0.0.1 at 2021-11-11 15:35:48 +0100
+I, [2021-11-11T15:35:48.841857 #10374]  INFO -- : [cd5e93b2-2d05-485e-a5c6-fe8e1a26c790] Processing by EventController#index as HTML
+I, [2021-11-11T15:35:48.842247 #10374]  INFO -- : [cd5e93b2-2d05-485e-a5c6-fe8e1a26c790]   Rendering event/index.html.erb within layouts/application
+I, [2021-11-11T15:35:48.846276 #10374]  INFO -- : [cd5e93b2-2d05-485e-a5c6-fe8e1a26c790]   Rendered event/index.html.erb within layouts/application (3.9ms)
+I, [2021-11-11T15:35:48.846431 #10374]  INFO -- : [cd5e93b2-2d05-485e-a5c6-fe8e1a26c790] Completed 500 Internal Server Error in 4ms
+F, [2021-11-11T15:35:48.847240 #10374] FATAL -- : [cd5e93b2-2d05-485e-a5c6-fe8e1a26c790]   
+F, [2021-11-11T15:35:48.847268 #10374] FATAL -- : [cd5e93b2-2d05-485e-a5c6-fe8e1a26c790] ActionView::Template::Error (connection to server on socket "/tmp/.s.PGSQL.5432" failed: FATAL:  database "EventBright_production" does not exist
+):
+F, [2021-11-11T15:35:48.847357 #10374] FATAL -- : [cd5e93b2-2d05-485e-a5c6-fe8e1a26c790]     14: 
+[cd5e93b2-2d05-485e-a5c6-fe8e1a26c790]     15: 
+[cd5e93b2-2d05-485e-a5c6-fe8e1a26c790]     16: <div class="d-flex flex-wrap justify-content-center">
+[cd5e93b2-2d05-485e-a5c6-fe8e1a26c790]     17: <%Event.all.each do |event|%>
+[cd5e93b2-2d05-485e-a5c6-fe8e1a26c790]     18:   <div class="card border-info my-2 mx-3 border-radius rounded" style="width: 18rem;">
+[cd5e93b2-2d05-485e-a5c6-fe8e1a26c790]     19:     <div class="card-body">
+[cd5e93b2-2d05-485e-a5c6-fe8e1a26c790]     20:       <h5 class="card-title">Event numéro <%= Event.all.index(event) + 1 %></h5>
+F, [2021-11-11T15:35:48.847380 #10374] FATAL -- : [cd5e93b2-2d05-485e-a5c6-fe8e1a26c790]   
+F, [2021-11-11T15:35:48.847405 #10374] FATAL -- : [cd5e93b2-2d05-485e-a5c6-fe8e1a26c790] app/views/event/index.html.erb:17:in `_app_views_event_index_html_erb__1531409082054133348_19520'
+I, [2021-11-11T15:40:01.225873 #10374]  INFO -- : [14deba6b-f748-4da9-8176-899e200b9d6b] Started GET "/home" for 127.0.0.1 at 2021-11-11 15:40:01 +0100
+I, [2021-11-11T15:40:01.244476 #10374]  INFO -- : [14deba6b-f748-4da9-8176-899e200b9d6b] Processing by HomeController#index as HTML
+I, [2021-11-11T15:40:01.249574 #10374]  INFO -- : [14deba6b-f748-4da9-8176-899e200b9d6b]   Rendering home/index.html.erb within layouts/application
+I, [2021-11-11T15:40:01.250550 #10374]  INFO -- : [14deba6b-f748-4da9-8176-899e200b9d6b]   Rendered home/index.html.erb within layouts/application (0.8ms)
+I, [2021-11-11T15:40:01.255466 #10374]  INFO -- : [14deba6b-f748-4da9-8176-899e200b9d6b] Completed 200 OK in 10ms (Views: 7.7ms)
+I, [2021-11-11T15:40:02.889900 #10374]  INFO -- : [81414b42-ae11-4f4c-847b-02f0fcf9d70c] Started GET "/home" for 127.0.0.1 at 2021-11-11 15:40:02 +0100
+I, [2021-11-11T15:40:02.906634 #10374]  INFO -- : [81414b42-ae11-4f4c-847b-02f0fcf9d70c] Processing by HomeController#index as HTML
+I, [2021-11-11T15:40:02.907419 #10374]  INFO -- : [81414b42-ae11-4f4c-847b-02f0fcf9d70c]   Rendering home/index.html.erb within layouts/application
+I, [2021-11-11T15:40:02.907733 #10374]  INFO -- : [81414b42-ae11-4f4c-847b-02f0fcf9d70c]   Rendered home/index.html.erb within layouts/application (0.2ms)
+I, [2021-11-11T15:40:02.909728 #10374]  INFO -- : [81414b42-ae11-4f4c-847b-02f0fcf9d70c] Completed 200 OK in 3ms (Views: 2.6ms)
+I, [2021-11-11T15:40:03.932220 #10374]  INFO -- : [56b298c5-4d62-49dc-899d-c2b260b3ec32] Started GET "/home" for 127.0.0.1 at 2021-11-11 15:40:03 +0100
+I, [2021-11-11T15:40:03.932924 #10374]  INFO -- : [56b298c5-4d62-49dc-899d-c2b260b3ec32] Processing by HomeController#index as HTML
+I, [2021-11-11T15:40:03.933388 #10374]  INFO -- : [56b298c5-4d62-49dc-899d-c2b260b3ec32]   Rendering home/index.html.erb within layouts/application
+I, [2021-11-11T15:40:03.933640 #10374]  INFO -- : [56b298c5-4d62-49dc-899d-c2b260b3ec32]   Rendered home/index.html.erb within layouts/application (0.1ms)
+I, [2021-11-11T15:40:03.934962 #10374]  INFO -- : [56b298c5-4d62-49dc-899d-c2b260b3ec32] Completed 200 OK in 2ms (Views: 1.7ms)
+I, [2021-11-11T15:40:05.533524 #10374]  INFO -- : [ed63a60b-9770-4116-8adf-4102c819278b] Started GET "/event" for 127.0.0.1 at 2021-11-11 15:40:05 +0100
+I, [2021-11-11T15:40:05.534406 #10374]  INFO -- : [ed63a60b-9770-4116-8adf-4102c819278b] Processing by EventController#index as HTML
+I, [2021-11-11T15:40:05.535065 #10374]  INFO -- : [ed63a60b-9770-4116-8adf-4102c819278b]   Rendering event/index.html.erb within layouts/application
+I, [2021-11-11T15:40:05.540212 #10374]  INFO -- : [ed63a60b-9770-4116-8adf-4102c819278b]   Rendered event/index.html.erb within layouts/application (5.0ms)
+I, [2021-11-11T15:40:05.540434 #10374]  INFO -- : [ed63a60b-9770-4116-8adf-4102c819278b] Completed 500 Internal Server Error in 6ms
+F, [2021-11-11T15:40:05.541330 #10374] FATAL -- : [ed63a60b-9770-4116-8adf-4102c819278b]   
+F, [2021-11-11T15:40:05.541361 #10374] FATAL -- : [ed63a60b-9770-4116-8adf-4102c819278b] ActionView::Template::Error (connection to server on socket "/tmp/.s.PGSQL.5432" failed: FATAL:  database "EventBright_production" does not exist
+):
+F, [2021-11-11T15:40:05.541503 #10374] FATAL -- : [ed63a60b-9770-4116-8adf-4102c819278b]     14: 
+[ed63a60b-9770-4116-8adf-4102c819278b]     15: 
+[ed63a60b-9770-4116-8adf-4102c819278b]     16: <div class="d-flex flex-wrap justify-content-center">
+[ed63a60b-9770-4116-8adf-4102c819278b]     17: <%Event.all.each do |event|%>
+[ed63a60b-9770-4116-8adf-4102c819278b]     18:   <div class="card border-info my-2 mx-3 border-radius rounded" style="width: 18rem;">
+[ed63a60b-9770-4116-8adf-4102c819278b]     19:     <div class="card-body">
+[ed63a60b-9770-4116-8adf-4102c819278b]     20:       <h5 class="card-title">Event numéro <%= Event.all.index(event) + 1 %></h5>
+F, [2021-11-11T15:40:05.541528 #10374] FATAL -- : [ed63a60b-9770-4116-8adf-4102c819278b]   
+F, [2021-11-11T15:40:05.541559 #10374] FATAL -- : [ed63a60b-9770-4116-8adf-4102c819278b] app/views/event/index.html.erb:17:in `_app_views_event_index_html_erb__1531409082054133348_19520'
+I, [2021-11-11T15:43:16.848951 #10374]  INFO -- : [540f6773-6276-4380-856e-4171e0723d2f] Started GET "/" for 127.0.0.1 at 2021-11-11 15:43:16 +0100
+I, [2021-11-11T15:43:16.849602 #10374]  INFO -- : [540f6773-6276-4380-856e-4171e0723d2f] Processing by EventController#index as HTML
+I, [2021-11-11T15:43:16.868039 #10374]  INFO -- : [540f6773-6276-4380-856e-4171e0723d2f]   Rendering event/index.html.erb within layouts/application
+I, [2021-11-11T15:43:16.872142 #10374]  INFO -- : [540f6773-6276-4380-856e-4171e0723d2f]   Rendered event/index.html.erb within layouts/application (4.0ms)
+I, [2021-11-11T15:43:16.872320 #10374]  INFO -- : [540f6773-6276-4380-856e-4171e0723d2f] Completed 500 Internal Server Error in 5ms
+F, [2021-11-11T15:43:16.873492 #10374] FATAL -- : [540f6773-6276-4380-856e-4171e0723d2f]   
+F, [2021-11-11T15:43:16.873562 #10374] FATAL -- : [540f6773-6276-4380-856e-4171e0723d2f] ActionView::Template::Error (connection to server on socket "/tmp/.s.PGSQL.5432" failed: FATAL:  database "EventBright_production" does not exist
+):
+F, [2021-11-11T15:43:16.873799 #10374] FATAL -- : [540f6773-6276-4380-856e-4171e0723d2f]     14: 
+[540f6773-6276-4380-856e-4171e0723d2f]     15: 
+[540f6773-6276-4380-856e-4171e0723d2f]     16: <div class="d-flex flex-wrap justify-content-center">
+[540f6773-6276-4380-856e-4171e0723d2f]     17: <%Event.all.each do |event|%>
+[540f6773-6276-4380-856e-4171e0723d2f]     18:   <div class="card border-info my-2 mx-3 border-radius rounded" style="width: 18rem;">
+[540f6773-6276-4380-856e-4171e0723d2f]     19:     <div class="card-body">
+[540f6773-6276-4380-856e-4171e0723d2f]     20:       <h5 class="card-title">Event numéro <%= Event.all.index(event) + 1 %></h5>
+F, [2021-11-11T15:43:16.873857 #10374] FATAL -- : [540f6773-6276-4380-856e-4171e0723d2f]   
+F, [2021-11-11T15:43:16.873920 #10374] FATAL -- : [540f6773-6276-4380-856e-4171e0723d2f] app/views/event/index.html.erb:17:in `_app_views_event_index_html_erb__1531409082054133348_19520'
+I, [2021-11-11T15:52:33.421913 #10664]  INFO -- : [6fe7c35a-e6a9-4a10-80e7-2432e11e985a] Started GET "/" for 127.0.0.1 at 2021-11-11 15:52:33 +0100
+I, [2021-11-11T15:52:33.423369 #10664]  INFO -- : [6fe7c35a-e6a9-4a10-80e7-2432e11e985a] Processing by EventController#index as HTML
+I, [2021-11-11T15:52:33.425717 #10664]  INFO -- : [6fe7c35a-e6a9-4a10-80e7-2432e11e985a]   Rendering event/index.html.erb within layouts/application
+I, [2021-11-11T15:52:33.436953 #10664]  INFO -- : [6fe7c35a-e6a9-4a10-80e7-2432e11e985a]   Rendered event/index.html.erb within layouts/application (11.1ms)
+I, [2021-11-11T15:52:33.437245 #10664]  INFO -- : [6fe7c35a-e6a9-4a10-80e7-2432e11e985a] Completed 500 Internal Server Error in 14ms
+F, [2021-11-11T15:52:33.438430 #10664] FATAL -- : [6fe7c35a-e6a9-4a10-80e7-2432e11e985a]   
+F, [2021-11-11T15:52:33.438477 #10664] FATAL -- : [6fe7c35a-e6a9-4a10-80e7-2432e11e985a] ActionView::Template::Error (connection to server on socket "/tmp/.s.PGSQL.5432" failed: FATAL:  database "EventBright_production" does not exist
+):
+F, [2021-11-11T15:52:33.438651 #10664] FATAL -- : [6fe7c35a-e6a9-4a10-80e7-2432e11e985a]     14: 
+[6fe7c35a-e6a9-4a10-80e7-2432e11e985a]     15: 
+[6fe7c35a-e6a9-4a10-80e7-2432e11e985a]     16: <div class="d-flex flex-wrap justify-content-center">
+[6fe7c35a-e6a9-4a10-80e7-2432e11e985a]     17: <%Event.all.each do |event|%>
+[6fe7c35a-e6a9-4a10-80e7-2432e11e985a]     18:   <div class="card border-info my-2 mx-3 border-radius rounded" style="width: 18rem;">
+[6fe7c35a-e6a9-4a10-80e7-2432e11e985a]     19:     <div class="card-body">
+[6fe7c35a-e6a9-4a10-80e7-2432e11e985a]     20:       <h5 class="card-title">Event numéro <%= Event.all.index(event) + 1 %></h5>
+F, [2021-11-11T15:52:33.438688 #10664] FATAL -- : [6fe7c35a-e6a9-4a10-80e7-2432e11e985a]   
+F, [2021-11-11T15:52:33.438727 #10664] FATAL -- : [6fe7c35a-e6a9-4a10-80e7-2432e11e985a] app/views/event/index.html.erb:17:in `_app_views_event_index_html_erb___1620342748426810493_19520'
+I, [2021-11-11T15:59:07.445160 #10954]  INFO -- : [ab12dce0-0ecd-430f-a784-d53bd399a787] Started GET "/" for 127.0.0.1 at 2021-11-11 15:59:07 +0100
+I, [2021-11-11T15:59:07.446846 #10954]  INFO -- : [ab12dce0-0ecd-430f-a784-d53bd399a787] Processing by EventController#index as HTML
+I, [2021-11-11T15:59:07.467756 #10954]  INFO -- : [ab12dce0-0ecd-430f-a784-d53bd399a787]   Rendering event/index.html.erb within layouts/application
+I, [2021-11-11T15:59:07.495376 #10954]  INFO -- : [ab12dce0-0ecd-430f-a784-d53bd399a787]   Rendered event/index.html.erb within layouts/application (27.3ms)
+I, [2021-11-11T15:59:07.495743 #10954]  INFO -- : [ab12dce0-0ecd-430f-a784-d53bd399a787] Completed 500 Internal Server Error in 32ms
+F, [2021-11-11T15:59:07.497143 #10954] FATAL -- : [ab12dce0-0ecd-430f-a784-d53bd399a787]   
+F, [2021-11-11T15:59:07.497239 #10954] FATAL -- : [ab12dce0-0ecd-430f-a784-d53bd399a787] ActionView::Template::Error (connection to server on socket "/tmp/.s.PGSQL.5432" failed: FATAL:  database "EventBright_production" does not exist
+):
+F, [2021-11-11T15:59:07.497393 #10954] FATAL -- : [ab12dce0-0ecd-430f-a784-d53bd399a787]     14: 
+[ab12dce0-0ecd-430f-a784-d53bd399a787]     15: 
+[ab12dce0-0ecd-430f-a784-d53bd399a787]     16: <div class="d-flex flex-wrap justify-content-center">
+[ab12dce0-0ecd-430f-a784-d53bd399a787]     17: <%Event.all.each do |event|%>
+[ab12dce0-0ecd-430f-a784-d53bd399a787]     18:   <div class="card border-info my-2 mx-3 border-radius rounded" style="width: 18rem;">
+[ab12dce0-0ecd-430f-a784-d53bd399a787]     19:     <div class="card-body">
+[ab12dce0-0ecd-430f-a784-d53bd399a787]     20:       <h5 class="card-title">Event numéro <%= Event.all.index(event) + 1 %></h5>
+F, [2021-11-11T15:59:07.497420 #10954] FATAL -- : [ab12dce0-0ecd-430f-a784-d53bd399a787]   
+F, [2021-11-11T15:59:07.497450 #10954] FATAL -- : [ab12dce0-0ecd-430f-a784-d53bd399a787] app/views/event/index.html.erb:17:in `_app_views_event_index_html_erb___2514289392819878101_19520'
+I, [2021-11-11T15:59:14.836503 #10954]  INFO -- : [f0051e3a-2fd6-465e-9d51-b8a328a7f8d5] Started GET "/" for 127.0.0.1 at 2021-11-11 15:59:14 +0100
+I, [2021-11-11T15:59:14.853247 #10954]  INFO -- : [f0051e3a-2fd6-465e-9d51-b8a328a7f8d5] Processing by EventController#index as HTML
+I, [2021-11-11T15:59:14.853765 #10954]  INFO -- : [f0051e3a-2fd6-465e-9d51-b8a328a7f8d5]   Rendering event/index.html.erb within layouts/application
+I, [2021-11-11T15:59:14.859576 #10954]  INFO -- : [f0051e3a-2fd6-465e-9d51-b8a328a7f8d5]   Rendered event/index.html.erb within layouts/application (5.7ms)
+I, [2021-11-11T15:59:14.859857 #10954]  INFO -- : [f0051e3a-2fd6-465e-9d51-b8a328a7f8d5] Completed 500 Internal Server Error in 6ms
+F, [2021-11-11T15:59:14.861241 #10954] FATAL -- : [f0051e3a-2fd6-465e-9d51-b8a328a7f8d5]   
+F, [2021-11-11T15:59:14.861341 #10954] FATAL -- : [f0051e3a-2fd6-465e-9d51-b8a328a7f8d5] ActionView::Template::Error (connection to server on socket "/tmp/.s.PGSQL.5432" failed: FATAL:  database "EventBright_production" does not exist
+):
+F, [2021-11-11T15:59:14.861547 #10954] FATAL -- : [f0051e3a-2fd6-465e-9d51-b8a328a7f8d5]     14: 
+[f0051e3a-2fd6-465e-9d51-b8a328a7f8d5]     15: 
+[f0051e3a-2fd6-465e-9d51-b8a328a7f8d5]     16: <div class="d-flex flex-wrap justify-content-center">
+[f0051e3a-2fd6-465e-9d51-b8a328a7f8d5]     17: <%Event.all.each do |event|%>
+[f0051e3a-2fd6-465e-9d51-b8a328a7f8d5]     18:   <div class="card border-info my-2 mx-3 border-radius rounded" style="width: 18rem;">
+[f0051e3a-2fd6-465e-9d51-b8a328a7f8d5]     19:     <div class="card-body">
+[f0051e3a-2fd6-465e-9d51-b8a328a7f8d5]     20:       <h5 class="card-title">Event numéro <%= Event.all.index(event) + 1 %></h5>
+F, [2021-11-11T15:59:14.861590 #10954] FATAL -- : [f0051e3a-2fd6-465e-9d51-b8a328a7f8d5]   
+F, [2021-11-11T15:59:14.861632 #10954] FATAL -- : [f0051e3a-2fd6-465e-9d51-b8a328a7f8d5] app/views/event/index.html.erb:17:in `_app_views_event_index_html_erb___2514289392819878101_19520'
+I, [2021-11-11T15:59:15.859572 #10954]  INFO -- : [34b998e1-ccd5-4a01-a62b-aec1d59ce099] Started GET "/" for 127.0.0.1 at 2021-11-11 15:59:15 +0100
+I, [2021-11-11T15:59:15.877470 #10954]  INFO -- : [34b998e1-ccd5-4a01-a62b-aec1d59ce099] Processing by EventController#index as HTML
+I, [2021-11-11T15:59:15.878191 #10954]  INFO -- : [34b998e1-ccd5-4a01-a62b-aec1d59ce099]   Rendering event/index.html.erb within layouts/application
+I, [2021-11-11T15:59:15.882510 #10954]  INFO -- : [34b998e1-ccd5-4a01-a62b-aec1d59ce099]   Rendered event/index.html.erb within layouts/application (4.2ms)
+I, [2021-11-11T15:59:15.882717 #10954]  INFO -- : [34b998e1-ccd5-4a01-a62b-aec1d59ce099] Completed 500 Internal Server Error in 5ms
+F, [2021-11-11T15:59:15.883597 #10954] FATAL -- : [34b998e1-ccd5-4a01-a62b-aec1d59ce099]   
+F, [2021-11-11T15:59:15.883631 #10954] FATAL -- : [34b998e1-ccd5-4a01-a62b-aec1d59ce099] ActionView::Template::Error (connection to server on socket "/tmp/.s.PGSQL.5432" failed: FATAL:  database "EventBright_production" does not exist
+):
+F, [2021-11-11T15:59:15.883774 #10954] FATAL -- : [34b998e1-ccd5-4a01-a62b-aec1d59ce099]     14: 
+[34b998e1-ccd5-4a01-a62b-aec1d59ce099]     15: 
+[34b998e1-ccd5-4a01-a62b-aec1d59ce099]     16: <div class="d-flex flex-wrap justify-content-center">
+[34b998e1-ccd5-4a01-a62b-aec1d59ce099]     17: <%Event.all.each do |event|%>
+[34b998e1-ccd5-4a01-a62b-aec1d59ce099]     18:   <div class="card border-info my-2 mx-3 border-radius rounded" style="width: 18rem;">
+[34b998e1-ccd5-4a01-a62b-aec1d59ce099]     19:     <div class="card-body">
+[34b998e1-ccd5-4a01-a62b-aec1d59ce099]     20:       <h5 class="card-title">Event numéro <%= Event.all.index(event) + 1 %></h5>
+F, [2021-11-11T15:59:15.883804 #10954] FATAL -- : [34b998e1-ccd5-4a01-a62b-aec1d59ce099]   
+F, [2021-11-11T15:59:15.883831 #10954] FATAL -- : [34b998e1-ccd5-4a01-a62b-aec1d59ce099] app/views/event/index.html.erb:17:in `_app_views_event_index_html_erb___2514289392819878101_19520'

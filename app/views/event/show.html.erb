@@ -4,6 +4,9 @@
       <div class="col col-lg-9 col-xl-7">
         <div class="card">
           <div class="rounded-top text-white d-flex flex-row" style="background-color: #000; height:200px;">
+            <%if @event.event_pic.attached?%>
+                <div class="avatar text-center my-2"><%= image_tag @event.event_pic, size: "200x200"%></div>
+              <% end %>
             <div class="my-3 mx-3">
               <h3><%= @event.title%></h3>
               <p>Du <%= @start_date %> au <%= @end_date %></p>

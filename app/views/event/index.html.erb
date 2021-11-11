@@ -16,6 +16,10 @@
 <div class="d-flex flex-wrap justify-content-center">
 <%Event.all.each do |event|%>
   <div class="card border-info my-2 mx-3 border-radius rounded" style="width: 18rem;">
+    <%if event.event_pic.attached?%>
+  <div class="avatar my-2"><%= image_tag event.event_pic, size: "230x230"%>
+  </div>
+  <% end %>
     <div class="card-body">
       <h5 class="card-title">Event numéro <%= Event.all.index(event) + 1 %></h5>
       <p class="card-text">"<%= event.title.capitalize %>"</p>

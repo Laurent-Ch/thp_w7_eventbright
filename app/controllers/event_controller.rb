@@ -1,6 +1,5 @@
-# frozen_string_literal: true
-
 class EventController < ApplicationController
+
   def index
   end
 
@@ -17,7 +16,7 @@ class EventController < ApplicationController
 
   def create
     @event = Event.new(start_date: params[:event_start_date], duration: params[:event_duration],
-                       title: params[:event_title], host: current_user, description: params[:event_description], price: params[:event_price], location: params[:event_location])
+                       title: params[:event_title], host: current_user, description: params[:event_description], price: params[:event_price], location: params[:event_location], event_pic: params[:event_pic])
     if @event.save
       redirect_to event_path(@event.id), success: 'Ton événement est en ligne !'
 
@@ -34,7 +33,7 @@ class EventController < ApplicationController
   def update
     @event = Event.find(params[:id])
     if @event.update(start_date: params[:event_start_date], duration: params[:event_duration],
-      title: params[:event_title], host: current_user, description: params[:event_description], price: params[:event_price], location: params[:event_location])
+      title: params[:event_title], host: current_user, description: params[:event_description], price: params[:event_price], location: params[:event_location], event_pic: params[:event_pic])
       redirect_to event_path(@event.id), success: 'Edition validé !'
     else
       flash[:danger] = 'Retente ta chance !'

@@ -81,5 +81,5 @@ test:
 production:
   <<: *default
   database: EventBright_production
-  username: EventBright
+  username: violettemarquis
   password: <%= ENV['EVENTBRIGHT_DATABASE_PASSWORD'] %>

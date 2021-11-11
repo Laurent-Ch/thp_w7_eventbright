@@ -6,7 +6,7 @@
 <div class="col-md-9 mb-md-0 mb-5">
 <br>
 <h2 class="h3-responsive font-weight-bold text-center my-4">Propose ton incroyable événement</h2>
-            <%= form_tag url_for(action: 'create'), method: 'post', class: 'contact-form', id: 'contact-form' do %>
+            <%= form_tag url_for(action: 'create'), multipart: true, method: 'post', class: 'contact-form', id: 'contact-form' do %>
 
                 <!--Grid row-->
                 <div class="row">
@@ -64,6 +64,14 @@
                         <div class="md-form mb-0 form-group">
                           <%= label_tag :event_location, "Où qu'il est?" %>
                           <%= text_field_tag :event_location, nil, class: 'form-control', placeholder:"Adresse complète, in Paris olalala"%>
+                        </div>
+                    </div>
+                </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0 form-group">
+                        <%= label_tag :event_pic, "Image*" %>
+                          <%= file_field_tag :event_pic, class: 'form-control'%>
                         </div>
                     </div>
                 </div>
