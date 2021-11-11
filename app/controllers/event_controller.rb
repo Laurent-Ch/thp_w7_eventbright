@@ -7,8 +7,8 @@ class EventController < ApplicationController
   def show
     @event = Event.find(params[:id])
     @guests = @event.guests
-    @start_date = @event.start_date.strftime('%d/%m/%Y %Hh%M')
-    @end_date = @event.end_date.strftime('%d/%m/%Y %Hh%M')
+    @start_date = @event.start_date.strftime('%d/%m/%Y à %Hh%M')
+    @end_date = @event.end_date.strftime('%d/%m/%Y à %Hh%M')
   end
 
   def new
@@ -35,7 +35,7 @@ class EventController < ApplicationController
     @event = Event.find(params[:id])
     if @event.update(start_date: params[:event_start_date], duration: params[:event_duration],
       title: params[:event_title], host: current_user, description: params[:event_description], price: params[:event_price], location: params[:event_location])
-      redirect_to event_path(@event.id), success: 'Evenement validé !'
+      redirect_to event_path(@event.id), success: 'Edition validé !'
     else
       flash[:danger] = 'Retente ta chance !'
       render :edit, status: :unprocessable_entity
@@ -44,6 +44,7 @@ class EventController < ApplicationController
   end
 
   def destroy
+    @event = Event.find(params[:id])
     @event.destroy
     redirect_to root_path
   end
