@@ -166,3 +166,20 @@ F, [2021-11-11T15:59:15.883774 #10954] FATAL -- : [34b998e1-ccd5-4a01-a62b-aec1d
 [34b998e1-ccd5-4a01-a62b-aec1d59ce099]     20:       <h5 class="card-title">Event numéro <%= Event.all.index(event) + 1 %></h5>
 F, [2021-11-11T15:59:15.883804 #10954] FATAL -- : [34b998e1-ccd5-4a01-a62b-aec1d59ce099]   
 F, [2021-11-11T15:59:15.883831 #10954] FATAL -- : [34b998e1-ccd5-4a01-a62b-aec1d59ce099] app/views/event/index.html.erb:17:in `_app_views_event_index_html_erb___2514289392819878101_19520'
+I, [2021-11-12T01:06:15.381859 #21912]  INFO -- : [7d23bfe3-ef16-4a29-8f58-75ec282e240a] Started GET "/" for 127.0.0.1 at 2021-11-12 01:06:15 +0100
+I, [2021-11-12T01:06:15.382982 #21912]  INFO -- : [7d23bfe3-ef16-4a29-8f58-75ec282e240a] Processing by EventController#index as HTML
+I, [2021-11-12T01:06:15.385517 #21912]  INFO -- : [7d23bfe3-ef16-4a29-8f58-75ec282e240a]   Rendering event/index.html.erb within layouts/application
+I, [2021-11-12T01:06:15.399022 #21912]  INFO -- : [7d23bfe3-ef16-4a29-8f58-75ec282e240a]   Rendered event/index.html.erb within layouts/application (13.3ms)
+I, [2021-11-12T01:06:15.399329 #21912]  INFO -- : [7d23bfe3-ef16-4a29-8f58-75ec282e240a] Completed 500 Internal Server Error in 16ms
+F, [2021-11-12T01:06:15.400288 #21912] FATAL -- : [7d23bfe3-ef16-4a29-8f58-75ec282e240a]   
+F, [2021-11-12T01:06:15.400381 #21912] FATAL -- : [7d23bfe3-ef16-4a29-8f58-75ec282e240a] ActionView::Template::Error (connection to server on socket "/tmp/.s.PGSQL.5432" failed: FATAL:  database "EventBright_production" does not exist
+):
+F, [2021-11-12T01:06:15.400655 #21912] FATAL -- : [7d23bfe3-ef16-4a29-8f58-75ec282e240a]     14: 
+[7d23bfe3-ef16-4a29-8f58-75ec282e240a]     15: 
+[7d23bfe3-ef16-4a29-8f58-75ec282e240a]     16: <div class="d-flex flex-wrap justify-content-center">
+[7d23bfe3-ef16-4a29-8f58-75ec282e240a]     17: <%Event.all.each do |event|%>
+[7d23bfe3-ef16-4a29-8f58-75ec282e240a]     18:   <div class="card border-info my-2 mx-3 border-radius rounded" style="width: 18rem;">
+[7d23bfe3-ef16-4a29-8f58-75ec282e240a]     19:     <%if event.event_pic.attached?%>
+[7d23bfe3-ef16-4a29-8f58-75ec282e240a]     20:   <div class="avatar my-2"><%= image_tag event.event_pic, size: "230x230"%>
+F, [2021-11-12T01:06:15.400697 #21912] FATAL -- : [7d23bfe3-ef16-4a29-8f58-75ec282e240a]   
+F, [2021-11-12T01:06:15.400728 #21912] FATAL -- : [7d23bfe3-ef16-4a29-8f58-75ec282e240a] app/views/event/index.html.erb:17:in `_app_views_event_index_html_erb___4112141714576819325_20020'

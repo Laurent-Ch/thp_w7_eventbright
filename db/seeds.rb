@@ -24,6 +24,7 @@ Attendance.destroy_all
     email: Faker::Internet.email(domain: 'yopmail.com'),
     password: Faker::Alphanumeric.alphanumeric(number: 10)
   )
+  user.avatar.attach(io: File.open(Rails.root.join("app/assets/images/user/#{rand(2)}.jpeg")), filename: "#{rand(2)}.jpeg")
 end
 
 # remplir table event
@@ -38,7 +39,7 @@ end
     location: Faker::Address.street_address,
     host: User.all.sample(1).first
   )
-    event.event_pic.attach(io: File.open(Rails.root.join("app/assets/images/#{rand(2)}.jpeg")), filename: "#{rand(2)}.jpeg")
+    event.event_pic.attach(io: File.open(Rails.root.join("app/assets/images/event/#{rand(4)}.jpeg")), filename: "#{rand(4)}.jpeg")
   end
 
 # remplir table attendance
