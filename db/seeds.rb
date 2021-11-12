@@ -16,13 +16,15 @@ Attendance.destroy_all
 
 # remplir table users
 
+admin_coin = [true, false]
 20.times do
   user = User.create!(
     first_name: Faker::Name.name,
     last_name: Faker::Name.last_name,
     description: Faker::ChuckNorris.fact,
     email: Faker::Internet.email(domain: 'yopmail.com'),
-    password: Faker::Alphanumeric.alphanumeric(number: 10)
+    password: Faker::Alphanumeric.alphanumeric(number: 10),
+    admin: admin_coin[rand(2)]
   )
   user.avatar.attach(io: File.open(Rails.root.join("app/assets/images/user/#{rand(2)}.jpeg")), filename: "#{rand(2)}.jpeg")
 end

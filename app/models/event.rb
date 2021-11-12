@@ -29,6 +29,9 @@ class Event < ApplicationRecord
 
   has_one_attached :event_pic
 
+  validates :event_pic,
+            presence: true
+
   def end_date
     start_date + duration * 60
   end
