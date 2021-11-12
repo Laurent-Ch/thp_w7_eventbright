@@ -38,7 +38,8 @@ end
     location: Faker::Address.street_address,
     host: User.all.sample(1).first
   )
-end
+    event.event_pic.attach(io: File.open(Rails.root.join("app/assets/images/#{rand(2)}.jpeg")), filename: "#{rand(2)}.jpeg")
+  end
 
 # remplir table attendance
 
